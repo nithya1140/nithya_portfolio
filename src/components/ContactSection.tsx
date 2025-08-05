@@ -51,7 +51,7 @@ const ContactSection = () => {
           <div className="inline-block p-2 bg-primary/10 rounded-lg mb-4">
             <span className="text-sm font-medium text-primary">CONTACT INFO</span>
           </div>
-          <h2 className="text-4xl font-bold text-foreground mb-4">Let's Talk</h2>
+          <h2 className="text-4xl font-bold text-black mb-4">Let's Talk</h2>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
           <p className="text-muted-foreground mt-6 max-w-2xl mx-auto text-lg">
             Ready to discuss your next data engineering project? I'd love to hear from you.

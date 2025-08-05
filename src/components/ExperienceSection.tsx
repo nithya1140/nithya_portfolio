@@ -37,7 +37,7 @@ const ExperienceSection = () => {
     <section id="experience" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Experience</h2>
+          <h2 className="text-4xl font-bold text-black mb-4">Experience</h2>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
         </div>
         

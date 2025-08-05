@@ -40,7 +40,7 @@ const HeroSection = () => {
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
                 <span className="text-muted-foreground">Hello, I'm</span><br />
-                <span className="text-foreground">Nithya Vasudevan</span><br />
+                <span className="text-black">Nithya Vasudevan</span><br />
                 <span className="text-primary">A Data Engineer</span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">

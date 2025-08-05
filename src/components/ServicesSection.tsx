@@ -54,7 +54,7 @@ const ServicesSection = () => {
           <div className="inline-block p-2 bg-primary/10 rounded-lg mb-4">
             <span className="text-sm font-medium text-primary">WHAT I OFFER</span>
           </div>
-          <h2 className="text-4xl font-bold text-foreground mb-4">Which Services I Will<br/>Provide For You</h2>
+          <h2 className="text-4xl font-bold text-black mb-4">Which Services I Will<br/>Provide For You</h2>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
           <p className="text-muted-foreground mt-6 max-w-3xl mx-auto text-lg">
             Comprehensive data engineering services for freelance, part-time consulting, 
