@@ -109,7 +109,7 @@ const ContactSection = () => {
       icon: Linkedin,
       label: "LinkedIn",
       value: "linkedin.com/in/nithya-vasudevan",
-      href: "https://linkedin.com/in/nithya-vasudevan"
+      href: "https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BeBfjZF%2FeTDe7wabK780j4g%3D%3D"
     },
     {
       icon: Github,

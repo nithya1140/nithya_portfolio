@@ -24,7 +24,7 @@ const Footer = () => {
               <Mail className="h-5 w-5" />
             </a>
             <a 
-              href="https://linkedin.com/in/nithya-vasudevan"
+              href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BeBfjZF%2FeTDe7wabK780j4g%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 bg-white/10 rounded-lg hover:bg-white/20 transition-colors"
