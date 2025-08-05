@@ -1,18 +1,97 @@
+import { useState } from "react";
+import emailjs from '@emailjs/browser';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { useToast } from "@/hooks/use-toast";
 import { 
   Phone, 
   Mail, 
   Linkedin, 
   Github, 
   Send,
-  MapPin 
+  MapPin,
+  Loader2
 } from "lucide-react";
 
 const ContactSection = () => {
+  const { toast } = useToast();
+  const [isLoading, setIsLoading] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+
+  // Initialize EmailJS
+  emailjs.init('mDzmrBWZ7vvu9ouE1');
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    // Validation
+    if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+      toast({
+        title: "Error",
+        description: "Please fill in all fields.",
+        variant: "destructive"
+      });
+      return;
+    }
+
+    setIsLoading(true);
+
+    try {
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        to_name: 'Nithya'
+      };
+
+      await emailjs.send(
+        'service_aao1vqm',
+        'template_i7lk0oq',
+        templateParams
+      );
+
+      toast({
+        title: "Success!",
+        description: "Your message has been sent successfully. I'll get back to you within 24 hours.",
+      });
+
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+
+    } catch (error) {
+      console.error('EmailJS error:', error);
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again or contact me directly.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   const contactInfo = [
     {
       icon: Phone,
@@ -70,33 +149,82 @@ const ContactSection = () => {
                 <p className="text-muted-foreground">Fill out the form below and I'll get back to you within 24 hours.</p>
               </CardHeader>
               <CardContent className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="name" className="text-sm font-medium">Full Name</Label>
-                    <Input id="name" placeholder="Your full name" className="h-12" />
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <Label htmlFor="name" className="text-sm font-medium">Full Name</Label>
+                      <Input 
+                        id="name" 
+                        name="name"
+                        value={formData.name}
+                        onChange={handleInputChange}
+                        placeholder="Your full name" 
+                        className="h-12"
+                        disabled={isLoading}
+                        required
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="email" className="text-sm font-medium">Email Address</Label>
+                      <Input 
+                        id="email" 
+                        name="email"
+                        type="email" 
+                        value={formData.email}
+                        onChange={handleInputChange}
+                        placeholder="your.email@example.com" 
+                        className="h-12"
+                        disabled={isLoading}
+                        required
+                      />
+                    </div>
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="email" className="text-sm font-medium">Email Address</Label>
-                    <Input id="email" type="email" placeholder="your.email@example.com" className="h-12" />
+                    <Label htmlFor="subject" className="text-sm font-medium">Subject</Label>
+                    <Input 
+                      id="subject" 
+                      name="subject"
+                      value={formData.subject}
+                      onChange={handleInputChange}
+                      placeholder="What's this about?" 
+                      className="h-12"
+                      disabled={isLoading}
+                      required
+                    />
                   </div>
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="subject" className="text-sm font-medium">Subject</Label>
-                  <Input id="subject" placeholder="What's this about?" className="h-12" />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="message" className="text-sm font-medium">Message</Label>
-                  <Textarea 
-                    id="message" 
-                    placeholder="Tell me about your project or how I can help..." 
-                    rows={6}
-                    className="resize-none"
-                  />
-                </div>
-                <Button size="lg" className="w-full hero-shadow transition-bounce hover:scale-105 text-lg">
-                  <Send className="mr-2 h-5 w-5" />
-                  Send Message
-                </Button>
+                  <div className="space-y-2">
+                    <Label htmlFor="message" className="text-sm font-medium">Message</Label>
+                    <Textarea 
+                      id="message" 
+                      name="message"
+                      value={formData.message}
+                      onChange={handleInputChange}
+                      placeholder="Tell me about your project or how I can help..." 
+                      rows={6}
+                      className="resize-none"
+                      disabled={isLoading}
+                      required
+                    />
+                  </div>
+                  <Button 
+                    type="submit"
+                    size="lg" 
+                    className="w-full hero-shadow transition-bounce hover:scale-105 text-lg"
+                    disabled={isLoading}
+                  >
+                    {isLoading ? (
+                      <>
+                        <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                        Sending...
+                      </>
+                    ) : (
+                      <>
+                        <Send className="mr-2 h-5 w-5" />
+                        Send Message
+                      </>
+                    )}
+                  </Button>
+                </form>
               </CardContent>
             </Card>
           </div>
