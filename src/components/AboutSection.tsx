@@ -33,10 +33,24 @@ const AboutSection = () => {
                   that drive business insights and decision-making.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Currently pursuing my Master's in Electrical and Computer Engineering at the University of Windsor, 
+                  Having completed my Master's in Electrical and Computer Engineering at the University of Windsor, 
                   I combine academic rigor with practical industry experience to stay at the forefront of 
                   data engineering innovation.
                 </p>
+                
+                {/* Resume Download Button */}
+                <div className="pt-4">
+                  <a 
+                    href="/resume.pdf" 
+                    download="Nithya_Vasudevan_Resume.pdf"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-xl hover:bg-primary/90 transition-smooth font-medium"
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    Download Resume
+                  </a>
+                </div>
               </div>
             </div>
             
@@ -69,7 +83,7 @@ const AboutSection = () => {
                   <div className="flex-1">
                     <h3 className="font-semibold text-lg mb-2">Master of Engineering</h3>
                     <p className="text-muted-foreground font-medium">Electrical and Computer Engineering</p>
-                    <p className="text-sm text-muted-foreground">University of Windsor • 2023–2025</p>
+                    <p className="text-sm text-muted-foreground">University of Windsor • 2023–2024</p>
                     <div className="mt-3 flex items-center gap-2">
                       <TrendingUp className="h-4 w-4 text-primary" />
                       <span className="text-sm text-primary font-medium">Advanced Data Systems</span>
