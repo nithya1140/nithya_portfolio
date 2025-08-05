@@ -5,7 +5,7 @@ const ExperienceSection = () => {
   const experiences = [
     {
       company: "Sutherland",
-      location: "Toronto, ON",
+      location: "Ontario, Canada",
       position: "Data Engineer",
       period: "Apr 2025 – Present",
       achievements: [
