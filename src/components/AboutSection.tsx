@@ -122,7 +122,7 @@ const AboutSection = () => {
               </div>
               <div className="bg-gradient-to-br from-accent/10 to-accent/5 p-4 rounded-xl text-center">
                 <TrendingUp className="h-6 w-6 text-accent mx-auto mb-2" />
-                <div className="text-lg font-bold text-accent">50+</div>
+                <div className="text-lg font-bold text-accent">5+</div>
                 <div className="text-sm text-muted-foreground">Projects</div>
               </div>
             </div>
