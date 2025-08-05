@@ -38,7 +38,7 @@ const HeroSection = () => {
       </div>
       
       {/* Social Media Icons */}
-      <div className="fixed left-6 top-1/2 transform -translate-y-1/2 z-10 space-y-4">
+      <div className="fixed right-6 top-1/2 transform -translate-y-1/2 z-10 space-y-4">
         <a href="https://github.com/nithyavasudevan" target="_blank" rel="noopener noreferrer" 
            className="flex items-center justify-center w-10 h-10 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-xl hover:bg-blue-500 hover:text-white transition-all duration-300 hover:scale-110 shadow-lg">
           <Github className="h-5 w-5" />
