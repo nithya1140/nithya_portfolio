@@ -1,6 +1,6 @@
 import { ChevronDown, Github, Linkedin, Mail, Brain, Cpu, Database, Zap, Sparkles, Bot } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-image.jpg";
+import heroImage from "/lovable-uploads/56c2a101-72ba-4fe9-8f4d-cb5c56bdae1c.png";
 
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
