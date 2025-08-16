@@ -77,6 +77,22 @@ const HeroSection = () => {
               </p>
             </div>
             
+            {/* Achievement Stats */}
+            <div className="grid grid-cols-3 gap-4 py-6">
+              <div className="text-center p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/40 shadow-lg">
+                <div className="text-sm font-bold text-blue-600">ETL Pipelines</div>
+                <div className="text-xs text-gray-600">30% faster processing</div>
+              </div>
+              <div className="text-center p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/40 shadow-lg">
+                <div className="text-sm font-bold text-purple-600">Power BI Dashboards</div>
+                <div className="text-xs text-gray-600">40% less manual reporting</div>
+              </div>
+              <div className="text-center p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/40 shadow-lg">
+                <div className="text-sm font-bold text-cyan-600">Cloud Solutions</div>
+                <div className="text-xs text-gray-600">Enterprise-grade security</div>
+              </div>
+            </div>
+            
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 size="lg" 
