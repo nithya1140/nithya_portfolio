@@ -69,13 +69,11 @@ const HeroSection = () => {
                 <span className="text-gray-600">Hello, I'm</span><br />
                 <span className="text-black">Nithya Vasudevan</span><br />
                 <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 bg-clip-text text-transparent">
-                  AI Data Engineer
+                  Data Engineer | Azure & BI Developer | Cloud Enthusiast
                 </span>
               </h1>
               <p className="text-lg text-gray-600 max-w-lg leading-relaxed">
-                I design and build <span className="font-semibold text-blue-600">intelligent data pipelines</span> powered by AI that transform raw data into 
-                <span className="font-semibold text-purple-600"> actionable insights</span>. Specializing in machine learning operations, 
-                automation, and next-generation cloud architectures.
+                Detail-oriented and results-driven Data Engineer with 5+ years of experience in data engineering, ETL pipelines, data modeling, and business intelligence. I specialize in building <span className="font-semibold text-blue-600">scalable data solutions</span> using Azure, SQL, and modern <span className="font-semibold text-purple-600">BI tools</span> to empower data-driven decision making.
               </p>
             </div>
             
