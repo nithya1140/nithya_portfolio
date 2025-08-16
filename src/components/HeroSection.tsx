@@ -73,7 +73,7 @@ const HeroSection = () => {
                 </span>
               </h1>
               <p className="text-lg text-gray-600 max-w-lg leading-relaxed">
-                I'm a Data Engineer with hands-on experience in designing and developing <span className="font-semibold text-blue-600">data pipelines</span>, cloud-based solutions, and business intelligence dashboards. I have a strong background in <span className="font-semibold text-purple-600">Microsoft BI Stack</span>, Azure Data Services, and Python. I enjoy solving complex data challenges, optimizing ETL processes, and delivering secure, scalable, and insightful analytics.
+                Data Engineer with 5+ years of experience in <span className="font-semibold text-blue-600">scalable data pipelines</span>, cloud solutions, and BI dashboards. Skilled in Azure, Databricks, and Python — delivering secure, <span className="font-semibold text-purple-600">high-impact analytics</span> for data-driven decisions.
               </p>
             </div>
             
