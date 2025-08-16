@@ -47,7 +47,7 @@ const HeroSection = () => {
            className="flex items-center justify-center w-10 h-10 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-xl hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-110 shadow-lg">
           <Linkedin className="h-5 w-5" />
         </a>
-        <a href="mailto:nithyavasudevan9804@gmail.com"
+        <a href="mailto:nithyadevan9804@gmail.com"
            className="flex items-center justify-center w-10 h-10 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-xl hover:bg-purple-500 hover:text-white transition-all duration-300 hover:scale-110 shadow-lg">
           <Mail className="h-5 w-5" />
         </a>

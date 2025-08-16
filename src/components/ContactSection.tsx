@@ -102,8 +102,8 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "nithyavasudevan9804@gmail.com",
-      href: "mailto:nithyavasudevan9804@gmail.com"
+      value: "nithyadevan9804@gmail.com",
+      href: "mailto:nithyadevan9804@gmail.com"
     },
     {
       icon: Linkedin,
