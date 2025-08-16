@@ -8,31 +8,31 @@ import laptopClean from "@/assets/laptop-clean.jpg";
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "Customer Data Platform – ETL Pipeline Modernization",
-      description: "Modernized legacy ETL processes by building scalable data pipelines using Python and Azure cloud services, resulting in significant performance improvements.",
+      title: "ETL Pipelines",
+      description: "Automated large-scale data pipelines in Azure Data Factory & SSIS, cutting processing time by 30%.",
       image: codingBg,
-      tools: ["Python", "Azure Data Factory", "Synapse", "SQL Server"],
-      outcome: "Reduced processing time by 60%",
+      tools: ["Azure Data Factory", "SSIS", "Azure Synapse", "SQL Server"],
+      outcome: "Automated large-scale data pipelines",
       icon: TrendingUp,
-      metrics: "60% faster processing"
+      metrics: "30% faster processing"
     },
     {
-      title: "Product Inventory Analytics Pipeline",
-      description: "Built end-to-end analytics pipeline for inventory management using modern data stack, enabling real-time insights and predictive analytics.",
+      title: "Power BI Dashboards",
+      description: "Built 20+ interactive dashboards, reducing manual reporting by 40% and improving decision-making.",
       image: laptopClean,
-      tools: ["Airflow", "dbt", "PostgreSQL", "AWS S3"],
-      outcome: "Reduced out-of-stock incidents by 30%",
+      tools: ["Power BI", "SSRS", "DAX", "Power Query"],
+      outcome: "Built 20+ interactive dashboards",
       icon: Clock,
-      metrics: "30% fewer stockouts"
+      metrics: "40% less manual reporting"
     },
     {
-      title: "Real-Time User Activity Streaming Pipeline",
-      description: "Implemented high-throughput streaming pipeline for user activity data, enabling real-time personalization and analytics.",
+      title: "Cloud Solutions",
+      description: "Delivered secure, scalable solutions with Azure Synapse, Databricks, and Key Vault.",
       image: codingBg,
-      tools: ["Kafka", "PySpark", "Redshift", "Lambda"],
-      outcome: "Reduced processing delay from 20 mins to <1 min",
+      tools: ["Azure Synapse", "Databricks", "Key Vault", "ARM Templates"],
+      outcome: "Delivered secure, scalable cloud solutions",
       icon: Zap,
-      metrics: "<1 min latency"
+      metrics: "Enterprise-grade security"
     }
   ];
 
