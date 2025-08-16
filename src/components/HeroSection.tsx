@@ -77,22 +77,6 @@ const HeroSection = () => {
               </p>
             </div>
             
-            {/* AI Stats */}
-            <div className="grid grid-cols-3 gap-4 py-6">
-              <div className="text-center p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/40 shadow-lg">
-                <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">99.9%</div>
-                <div className="text-sm text-gray-600">AI Accuracy</div>
-              </div>
-              <div className="text-center p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/40 shadow-lg">
-                <div className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">10x</div>
-                <div className="text-sm text-gray-600">Faster Processing</div>
-              </div>
-              <div className="text-center p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/40 shadow-lg">
-                <div className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">24/7</div>
-                <div className="text-sm text-gray-600">ML Monitoring</div>
-              </div>
-            </div>
-            
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 size="lg" 
