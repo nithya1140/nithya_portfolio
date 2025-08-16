@@ -4,30 +4,46 @@ import { Card, CardContent } from "@/components/ui/card";
 const ExperienceSection = () => {
   const experiences = [
     {
-      company: "Sutherland",
-      location: "Ontario, Canada",
+      company: "Avanade",
+      location: "Toronto, Canada",
       position: "Data Engineer",
-      period: "Apr 2025 – Present",
+      period: "Jan 2025 – Present",
       achievements: [
-        "Built real-time Kafka-based data pipelines for streaming analytics",
-        "Containerized data workflows using Docker and OpenShift",
-        "Integrated Azure cloud solutions for scalable data processing",
-        "Implemented enterprise data security and access controls",
-        "Supported analytics teams with optimized data infrastructure"
+        "Developed and monitored large-scale ETL pipelines using ADF and SSIS",
+        "Designed Power BI dashboards & SSRS reports to improve decision-making",
+        "Built OLTP/OLAP architectures, optimized with partitioning & caching",
+        "Automated deployments using ARM templates",
+        "Implemented metadata management & lineage with Azure Purview",
+        "Mentored junior developers & enforced coding best practices"
       ],
       current: true
     },
     {
-      company: "ARI India Pvt Ltd",
-      location: "Chennai, India",
-      position: "Data Engineer",
-      period: "Oct 2019 – Jun 2023",
+      company: "TCS",
+      location: "Kochi, India", 
+      position: "Cloud and BI Engineer",
+      period: "Sep 2021 – Jul 2023",
       achievements: [
-        "Developed ETL/ELT workflows using Azure Data Factory and Synapse",
-        "Streamlined real-time data processing with Apache Kafka",
-        "Built secure Angular dashboards for data visualization",
-        "Implemented comprehensive data governance frameworks",
-        "Optimized SQL Server Integration Services (SSIS) packages"
+        "Built ETL pipelines & dashboards with SSIS + Power BI",
+        "Designed real-time data solutions using Azure Stream Analytics & Functions",
+        "Automated workflows using Azure Logic Apps & Data Lake",
+        "Enhanced analytics with SSAS models & advanced Power BI reporting",
+        "Ensured compliance with enterprise data governance"
+      ],
+      current: false
+    },
+    {
+      company: "Indian Overseas Bank",
+      location: "Tamil Nadu, India",
+      position: "BI Engineer", 
+      period: "Sep 2019 – Sep 2021",
+      achievements: [
+        "Built interactive Power BI dashboards for credit risk & financial insights",
+        "Designed schemas in Azure Synapse & integrated with Key Vault security",
+        "Enhanced dashboards for performance & UX",
+        "Developed SSIS packages with parallel processing & table partitioning",
+        "Configured SSRS subscriptions, security roles, and delivery automation",
+        "Maintained SSAS tabular models & ensured data integrity"
       ],
       current: false
     }
