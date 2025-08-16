@@ -117,7 +117,7 @@ const AboutSection = () => {
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-gradient-to-br from-primary/10 to-primary/5 p-4 rounded-xl text-center">
                 <Clock className="h-6 w-6 text-primary mx-auto mb-2" />
-                <div className="text-lg font-bold text-primary">4+</div>
+                <div className="text-lg font-bold text-primary">5+</div>
                 <div className="text-sm text-muted-foreground">Years Experience</div>
               </div>
               <div className="bg-gradient-to-br from-accent/10 to-accent/5 p-4 rounded-xl text-center">
